@@ -50,11 +50,11 @@ jobs:
       - name: Checkout du code
         uses: actions/checkout@v4
 
-      - name: Téléchargement du Build
-        uses: actions/download-artifact@v2
-        with:
-          name: build
-          path: build
+      # - name: Téléchargement du Build
+      #   uses: actions/download-artifact@v2
+      #   with:
+      #     name: build
+      #     path: build
 
       - name: Déploiement vers Firebase
         uses: w9jds/firebase-action@master

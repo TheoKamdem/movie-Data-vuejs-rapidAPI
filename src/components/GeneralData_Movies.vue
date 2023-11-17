@@ -21,14 +21,14 @@
               {{
                 movie.title && movie.title.length < 20
                   ? movie.title
-                  : movie.title.substring(0, 20) + ".."
+                  : movie.title.substring(0, 20) + "...."
               }}</h8
             >
             <p class="card-text">
               Genre: {{ movie.genre[0] }}, {{ movie.genre[1] }}
             </p>
-            <p class="card-text">Note: {{ movie.imdbrating }}</p>
-            <p class="card-text">Date: {{ movie.released }}</p>
+            <p class="card-text">Note : {{ movie.imdbrating }}</p>
+            <p class="card-text">Date : {{ movie.released }}</p>
 
             <button
               type="button"

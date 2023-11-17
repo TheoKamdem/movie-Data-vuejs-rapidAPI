@@ -37,7 +37,7 @@
               data-bs-target="#movieDetail"
               @click="showMovieDetails(movie)"
             >
-              Details
+              Detail(s)
               <!-- <i class="fa fa-line-chart"></i> -->
             </button>
           </div>
@@ -56,7 +56,7 @@
         <div class="modal-header">
           <i class="fa fa-line-chart"></i> &nbsp; &nbsp;
           <h5 class="modal-title h4" id="movieDetailLabel">
-            Detail
+            Detail(S)
           </h5>
           <button
             type="button"
@@ -68,9 +68,9 @@
         <div class="modal-body">
           <div class="row">
             <div class="col-12">
-                  <p class="card-text">Note: {{ selectedMovie && selectedMovie.imdbrating }}</p>
-                  <p class="card-text">Synopsis: {{ selectedMovie && selectedMovie.synopsis }}</p>
-                  <p class="card-text">Type: {{ selectedMovie && selectedMovie.type }}</p>
+                  <p class="card-text">Note : {{ selectedMovie && selectedMovie.imdbrating }}</p>
+                  <p class="card-text">Synopsis : {{ selectedMovie && selectedMovie.synopsis }}</p>
+                  <p class="card-text">Type : {{ selectedMovie && selectedMovie.type }}</p>
               <!-- <ProjectDetail /> -->
             </div>
           </div>

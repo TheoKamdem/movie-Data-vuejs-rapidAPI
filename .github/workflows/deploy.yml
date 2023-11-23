@@ -1,4 +1,4 @@
-name: movie list CI
+name: movie-list CI
 
 on:
   push:
@@ -40,12 +40,18 @@ jobs:
 
   deploy:
     name: Déploiement
-    needs: dist
+    needs: build
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout du code
         uses: actions/checkout@v4
+
+      - name: Téléchargement de la construction
+        uses: actions/download-artifact@v2
+        with:
+          name: dist
+          path: dist
 
       - name: Déploiement vers Firebase
         uses: w9jds/firebase-action@master

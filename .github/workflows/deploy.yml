@@ -35,12 +35,12 @@ jobs:
       - name: Archivage du Build
         uses: actions/upload-artifact@v2
         with:
-          name: build
-          path: build
+          name: dist
+          path: dist
 
   deploy:
     name: Déploiement
-    needs: build
+    needs: dist
     runs-on: ubuntu-latest
 
     steps:
